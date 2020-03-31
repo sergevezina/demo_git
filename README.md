@@ -2,3 +2,5 @@
 ************
 
 Connexion réussie !
+
+Depuis le desktop et GitHub!
