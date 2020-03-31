@@ -1,0 +1,120 @@
+
+
+git clone https://github.com/facebook/react.git
+		
+			->	Clone le code d'un repository sur github
+			
+---
+			
+git init  		-> 	Ajoute un répertoire au controle de code source
+
+---
+
+git status 		-> 	Indique l'état des fichiers dans le répertoire
+
+git log			->	Permet de voir les commits effectués. 
+				(-p) : permet de voir les détails
+				(--stat) : permet de voir moins de détails
+
+---
+
+git add <file>		-> 	Ajoute un fichier au suivi du controle de code source
+			
+---
+
+git commit -m "Mon commentaire d'archivage" 
+
+			-> 	(-a) Enregistre les derniers changements au contrôle de code source avec un commentaire. (local)
+			
+			
+git commit -a -m (ou -am) "Mon commentaire"
+
+			-> 	(-a) ajout automatiquement les changement au controle de code source. (local)
+
+---
+
+git diff		-> 	Pour voir les changement. (+) = lignes ajoutées, (-) lignes supprimées
+
+---
+
+git stash 		->	Met de côté les modifications en cours
+
+git stash pop		->	Reprend les modifications mises de côté par "git stash" et vide le "stash"
+			
+git stash apply		->	Reprend les modifications mises de côté par "git stash", mais ne vide pas le "stash"
+
+---
+			
+git push origin <branch>
+
+			-> 
+
+git pull origin <branch>
+
+			->
+
+---
+
+git branch 
+
+			-> montre les branches du repo
+
+git branch <ma-branche>
+
+			-> Créer une nouvelle branche
+			
+git branch -d <ma-branche>
+
+			->	Supprime la branche
+			
+git checkout (-b) <ma-branche>
+
+			-> Change de branche et "-b" créer la branche au lieu de le faire en deux temps
+			
+git merge <ma-branche>
+
+			-> Fusionne la branche spécifiée vers la branche courante 
+
+			-> :x pour sauvegarder dans la console de commentaire du merge
+
+---
+
+git blame <file>
+
+			-> Voir les commits <SHA> pour chaques lignes du fichier
+
+git show <SHA>
+
+			-> Montre le commit associé au <SHA>
+
+---
+
+.gitignore 
+
+			-> Fichier qui contient les noms de fichier que ne l'on veut pas envoyer sur git/github (fichiers config et autres)
+
+---
+
+git restore --staged <file>
+
+
+
+
+*** Lors de la fusion ***
+
+git merge <branch-source>
+
+régler les conflits 
+
+git add <fichier-conflit>
+
+git merge (:x pour sauvegarder dans la console de commentaire du merge)
+
+*************************
+
+git mergetool --tool-help
+
+
+https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
+
+			
